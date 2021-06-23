@@ -1,0 +1,16 @@
+* {
+    background-image: url("./img/payson-wick-0gNVyfQMRVI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+    color: lightgreen;
+    font-family: monospace;
+    text-align: center;
+}
+
+.item {
+    margin: 100px 100px;
+    color: white;
+}
