@@ -18,3 +18,11 @@ header {
 .navLink {
     text-align: end;
 }
+
+.pointer {
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: lightblue;
+}

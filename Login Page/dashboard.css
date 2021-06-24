@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  
+
+  .column {
+    float: left;
+    padding: 10px;
+    height: 600px;
+  }
+  
+ .column2 {
+     display: inline;
+ }
+
+  .left {
+    width: 30%;
+  }
+  
+  .right {
+    width: 70%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .pointer {
+      cursor: pointer;
+  }
+
+  .aside {
+    background-image: url("./img/sincerely-media-K5OLjMlPe4U-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }

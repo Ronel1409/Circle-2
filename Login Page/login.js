@@ -7,16 +7,15 @@ const user = {
     password = password
 }
 
-fetch("locahost:3000").then(() => (res, req) {
+fetch("locahost:3000").then((res, req) => {
     if (user > 0) {
         res.status(400)
     } else {
         return user = null
     }
-}). catch (error) {
-    return errror().res.status(401)
-}
-
+}).catch((error) => {
+    return error().res.status(401)
+})
 
 const LoginUser = () => {
     if (userName === db.username && password === db.password) {
@@ -26,4 +25,4 @@ const LoginUser = () => {
     } else {
         return `error logging in`
     }
-};
+}
