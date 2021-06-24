@@ -1,28 +1,38 @@
 //Login
-const userName = document.getElementsById('email').toLowerCase();
-const password = document.getElementsById('inputPassword3');
+ 
+    function validateform(){  
+        var name=document.myform.email.value;  
+        var password=document.myform.password.value;  
+          
+        if (name==null || name==""){  
+          alert("Email can't be blank");  
+          return false;  
+        }else if(password.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+          }  
+        }   
 
-const user = {
-    userName = userName,
-    password = password
-}
 
-fetch("locahost:3000").then((res, req) => {
-    if (user > 0) {
-        res.status(400)
-    } else {
-        return user = null
-    }
-}).catch((error) => {
-    return error().res.status(401)
-})
+// //RESTApi simultion
+// fetch("https://example.com").then((res, req) => {
+//     if (user > 0) {
+//         res.status(400)
+//     } else {
+//         return user = null
+//     }
+// }).catch((error) => {
+//     return error().res.status(401)
+// })
 
-const LoginUser = () => {
-    if (userName === db.username && password === db.password) {
-        return `Welcome ${Username}`;
-    } else if (!password && !userName) {
-        return `User not found`
-    } else {
-        return `error logging in`
-    }
-}
+// //login
+// const LoginUser = () => {
+//     if (userName === db.username && password === db.password) {
+//         return `Welcome ${Username}`;
+//     } else if (!password && !userName) {
+//         return `User not found`
+//     } else {
+//         return `error logging in`
+//     }
+// }
+
